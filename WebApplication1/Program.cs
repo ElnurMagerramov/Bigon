@@ -13,7 +13,7 @@ namespace WebApplication1
             builder.Services.AddDbContext<DataContext>(cfg =>
             {
                 cfg.UseSqlServer(builder.Configuration.GetConnectionString("cString"));
-            })
+            });
 
             var app = builder.Build();
 
